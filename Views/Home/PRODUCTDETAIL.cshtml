@@ -1,0 +1,124 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="~/Content/PRODUCTDETAIL.css" />
+    <script src="~/Scripts/PRODUCTDETAIL.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="product-detail-page">
+        <div class="breadcrumb">
+            <a href="#" class="read-sample">Đọc Thử</a>
+        </div>
+
+        <div class="product-main-content">
+
+            <div class="product-media">
+                <div class="main-image-box">
+                    <img src="https://product.hstatic.net/1000237375/product/bia_truoc_1_1b70c7efb1404568b6752bda733bdb3a_master.jpg" alt="Sách: 101 Từ Đầu Tiên Cho Bé - Động Vật" class="main-image">
+                </div>
+                <div class="image-gallery">
+                    <div class="thumbnail active"><img src="https://product.hstatic.net/1000237375/product/bia_truoc_1_1b70c7efb1404568b6752bda733bdb3a_master.jpg" alt="Ảnh 1"></div>
+                    <div class="thumbnail"><img src="https://product.hstatic.net/1000237375/product/bia_truoc_1_1b70c7efb1404568b6752bda733bdb3a_master.jpg" alt="Ảnh 2"></div>
+                    <div class="thumbnail"><img src="https://product.hstatic.net/1000237375/product/bia_truoc_1_1b70c7efb1404568b6752bda733bdb3a_master.jpg" alt="Ảnh 3"></div>
+                    <div class="thumbnail"><img src="https://product.hstatic.net/1000237375/product/bia_truoc_1_1b70c7efb1404568b6752bda733bdb3a_master.jpg" alt="Ảnh 4"></div>
+                </div>
+            </div>
+
+            <div class="product-info-column">
+
+                <div class="product-basic-info">
+                    <h1 class="product-title">Sách: 101 Từ Đầu Tiên Cho Bé - Động Vật (Tái Bản)</h1>
+                    <p class="sku">Mã sản phẩm: 8936067604436</p>
+                    <p class="author">Tác giả: Milo Kids (biên soạn)</p>
+                    <p class="publisher">NXB: NXB Thanh Niên</p>
+                    <p class="specs">Kích thước: 15.5x15.5 cm</p>
+                    <p class="specs">Năm xuất bản: 2021</p>
+                    <p class="specs">Số trang: 22</p>
+                    <p class="specs">Khối lượng: 270 grams</p>
+                    <p class="specs">Bìa: bìa cứng</p>
+                </div>
+
+
+                <div class="container">
+                    <div class="box box1">
+                        <div class="product-price-section ">
+                            <div class="price-box">
+                                <span class="original-price">60,000đ</span>
+                                <span class="sale-price">48,000đ</span>
+                                <span class="discount-tag">Giảm 20%</span>
+                            </div>
+
+                            <div class="quantity-selector">
+                                <label for="quantity">Số lượng</label>
+                                <div class="quantity-input-group">
+                                    <button class="quantity-btn minus-btn" onclick="changeQuantity(this, -1)">-</button>
+                                    <input type="number" class="quantity-input" value="1" min="1" onchange="updateItemTotal(this)" onkeyup="updateItemTotal(this)">
+                                    <button class="quantity-btn plus-btn" onclick="changeQuantity(this, 1)">+</button>
+                                </div>
+                            </div>
+
+                            <button class="add-to-cart-btn">THÊM VÀO GIỎ</button>
+                        </div>
+
+                    </div>
+                    <div class="box box2">
+                        <div class="product-service-column">
+                            <h3 class="service-heading">Dịch vụ của chúng tôi</h3>
+                            <div class="service-box">
+                                <p class="service-item"><i class="fas fa-truck service-icon"></i> Giao tận nhà trong 3 - 7 ngày làm việc.</p>
+                                <p class="service-item"><i class="fas fa-star service-icon"></i> Miễn phí giao hàng Toàn Quốc cho đơn hàng trên 300K.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product-service-and-promo">
+                    <h3 class="promo-heading">Dịch vụ & Khuyến mãi</h3>
+
+                    <ul class="promo-list">
+                        <li class="promo-item">
+                            <i class="fas fa-check-circle check-icon"></i>
+                            <span class="promo-text">Đổi với sách giảm 40% - 50% - 70% (sản phẩm xã kho): Khách hàng được mua tối đa 3 sản phẩm/ 1 mặt hàng/ 1 đơn hàng</span>
+                        </li>
+                        <li class="promo-item">
+                            <i class="fas fa-bookmark bookmark-icon"></i>
+                            <span class="promo-text">Tặng kèm Bookmark (Dấu trang) cho các sách Kỹ năng sống, Kinh doanh, Mẹ và Bé, Văn học</span>
+                        </li>
+                        <li class="promo-item">
+                            <i class="fas fa-shipping-fast shipping-icon"></i>
+                            <span class="promo-text">FREESHIP cho đơn hàng từ 300K trở lên</span>
+                        </li>
+                        <li class="promo-item">
+                            <i class="fas fa-ticket-alt ticket-icon"></i>
+                            <span class="promo-text">Tặng kèm 1 VOUCHER 20K cho đơn từ 500K trở lên</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="social-share">
+                    <div class="fb-like-placeholder">
+                        <iframe src="" width="90" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+</body>
+</html>

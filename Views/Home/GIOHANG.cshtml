@@ -1,0 +1,109 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/GIOHANGCSS.css")" />
+<link href="~/Content/GIOHANG.css" rel="stylesheet" />
+<script src="~/Content/GIOHANG.js"></script>
+<div class="cart-container">
+    <div class="cart-row header-row">
+        <h1>Giỏ Hàng</h1>
+    </div>
+
+    <div class="cart-row column-titles">
+        <div class="col-title product-col">Sản phẩm</div>
+        <div class="col-title price-col">Giá</div>
+        <div class="col-title quantity-col">Số Lượng</div>
+        <div class="col-title total-col">Tổng</div>
+        <div class="col-title delete-col">Xóa</div>
+    </div>
+
+    <div class="cart-row product-item product-row" data-price="104000">
+        <div class="item-detail product-col">
+            <div class="product-info">
+                <img src="https://cdn.hstatic.net/products/1000237375/thi_t_k__ch_a_c__t_n__3__f11b8561090345f68c0422643ddab9e4_small.png" alt="Sách Kid Confidence" class="product-image">
+                <span class="product-name">Sách: Kid Confidence - Xây Dựng Sự Tự Tin Cho Trẻ</span>
+            </div>
+        </div>
+        <div class="item-detail price-col">104,000₫</div>
+        <div class="item-detail quantity-col">
+            <input type="number" value="1" min="1" class="quantity-input" oninput="updateCart()">
+        </div>
+        <div class="item-detail total-col item-total">104,000₫</div>
+        <div class="item-detail delete-col"><button class="delete-btn">Xóa</button></div>
+    </div>
+
+    <div class="cart-row notes-checkout">
+        <div class="notes-block">
+            <label for="note-textarea">Chú Thích</label>
+            <textarea id="note-textarea"></textarea>
+        </div>
+        <div class="checkout-block">
+            <div class="grand-total">Tổng: <span id="grand-total-value">104,000₫</span></div>
+            <div class="actions">
+                <button class="continue-shopping">TIẾP TỤC MUA SẮM</button>
+                <a href="/Home/ThongTinDonHang" class="checkout-btn">THANH TOÁN</a>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="cart-row viewed-products">
+        <h2>SẢN PHẨM ĐÃ XEM</h2>
+    </div>
+</div>
+
+<div class="order-form-container">
+    <div class="form-block">
+        <div class="form-header">
+            <h2 class="form-title">THÔNG TIN</h2>
+        </div>
+        <div class="form-fields">
+            <div class="form-group">
+                <label for="name">Tên:</label>
+                <input type="text" id="name" name="name" class="form-input">
+                <span class="error-message" id="name-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-input">
+                <span class="error-message" id="email-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="address">Địa chỉ:</label>
+                <input type="text" id="address" name="address" class="form-input">
+                <span class="error-message" id="address-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Sđt:</label>
+                <input type="tel" id="phone" name="phone" class="form-input">
+                <span class="error-message" id="phone-error"></span>
+            </div>
+            <div class="form-group payment-method">
+                <label>Phương thức thanh toán:</label>
+                <div>
+                    <input type="radio" id="cod" name="payment" value="cod" checked>
+                    <label for="cod">Thanh toán khi giao hàng</label>
+                </div>
+                <div>
+                    <input type="radio" id="prepay" name="payment" value="prepay">
+                    <label for="prepay">Thanh toán trước</label>
+                </div>
+                <span class="error-message" id="payment-error"></span>
+            </div>
+            <div class="form-actions">
+                <button class="checkout-submit-btn">THANH TOÁN</button>
+            </div>
+        </div>
+    </div>
+    <div class="order-success-block hidden">
+        <div class="success-icon">
+            <img src="https://png.pngtree.com/png-clipart/20230921/original/pngtree-vector-graphic-of-a-tick-or-check-mark-symbol-used-for-png-image_12816242.png" alt="Đặt hàng thành công" class="check-mark-icon">
+        </div>
+        <h2 class="success-message">ĐẶT HÀNG THÀNH CÔNG</h2>
+        <p class="order-code">MÃ ĐƠN HÀNG : <span id="display-order-code">#ABCXYZ</span></p>
+        <p class="thank-you-message">CẢM ƠN BẠN ĐÃ MUA HÀNG!</p>
+    </div>
+</div>

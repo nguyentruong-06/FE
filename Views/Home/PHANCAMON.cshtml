@@ -1,0 +1,209 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>MINH LONG BOOK - Đặt hàng Thành Công</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            border: 1px solid lightgray;
+            border-radius: 8px;
+            padding: 30px;
+            width: 380px;
+            box-shadow: 0 2px 8px gray;
+            background-color: white;
+        }
+
+
+        h2 {
+            text-align: center;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .success {
+            display: flex;
+            align-items: center;
+            color: green;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+            .success span {
+                font-size: 22px;
+                margin-right: 8px;
+            }
+
+        .order-info {
+            background-color: whitesmoke;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-size: 14px;
+            color: black;
+        }
+
+        .btn {
+            display: block;
+            background-color: blue;
+            color: white;
+            border: none;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+            .btn:hover {
+                background-color: royalblue;
+            }
+
+        .help {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 13px;
+            color: black;
+        }
+
+            .help a {
+                color: blue;
+                text-decoration: none;
+            }
+
+        /**/
+        .cart-container
+        {
+            width: 420px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        .cart-item 
+        {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+
+            .cart-item img
+            {
+                width: 50px;
+                height: 70px;
+                margin-right: 10px;
+            }
+
+        .item-info
+        {
+            flex: 1;
+        }
+
+            .item-info p
+            {
+                margin: 3px 0;
+                font-size: 14px;
+            }
+
+        .price
+        {
+            text-align: right;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .summary
+        {
+            margin-top: 15px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+
+            .summary div
+            {
+                display: flex;
+                justify-content: space-between;
+                margin: 5px 0;
+            }
+
+        .total
+        {
+            font-weight: bold;
+            font-size: 18px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+   
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>MINH LONG BOOK</h2>
+        <div class="success">
+            <span>✔</span>
+            <div>
+                <b>Đặt hàng thành công</b><br>
+                Mã đơn hàng #119582<br>
+                Cảm ơn bạn đã mua hàng!
+            </div>
+        </div>
+
+        <div class="order-info">
+            <b>Thông tin đơn hàng</b><br><br>
+            Họ tên: Nguyễn Văn A<br>
+            Địa chỉ: 123 Cách Mạng Tháng 8, TP.HCM<br>
+            Số điện thoại: 0123456789<br><br>
+            <b>Phương thức thanh toán:</b> Thanh toán khi giao hàng (COD)
+        </div>
+
+        <a href="#" class="btn">Tiếp tục mua hàng</a>
+        <div class="help">
+            Cần hỗ trợ? <a href="#">Liên hệ chúng tôi</a>
+        </div>
+    </div>
+    <div class="cart-container">
+        <div class="cart-item">
+            <div class="item-info">
+                <p><strong>Bookset sách:</strong> Làm Chủ Nghệ Thuật Giao Tiếp</p>
+                <p>(4 cuốn: Khéo ăn nói + Hài hước + Nói thế nào + Nói nhiều)</p>
+            </div>
+            <div class="price">232,500đ</div>
+        </div>
+
+        <div class="cart-item">
+            <div class="item-info">
+                <p><strong>Bookset:</strong> Đắc Nhân Tâm - Bậc thầy giao tiếp</p>
+                <p>(4 cuốn: Đọc tâm + Khen ngợi + Khéo ăn nói + NT giao tiếp)</p>
+            </div>
+            <div class="price">297,000đ</div>
+        </div>
+
+        <div class="summary">
+            <div><span>Tạm tính</span><span>529,500đ</span></div>
+            <div><span>Phí vận chuyển</span><span>Miễn phí</span></div>
+            <div class="total"><span>Tổng cộng</span><span>529,500đ</span></div>
+        </div>
+    </div>
+
+</body>
+</html>

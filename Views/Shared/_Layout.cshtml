@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title MINH LONG BOOK </title>
+    <link rel="icon" type="image/x-icon" href="https://file.hstatic.net/1000237375/file/logo_600_x_600_44679ba5f5864084bed3fe6c636f0bcc_grande.png" />
+    <script src="https://kit.fontawesome.com/7cfb59eb5f.js" crossorigin="anonymous"></script>
+    @Styles.Render("~/Content/css")
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/TRANGCHU.css")" />
+
+    @Scripts.Render("~/bundles/modernizr")
+    <!--boostrap-->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <!--trang menu-->
+    <header>
+        <section>
+            <!--thanh menu-->
+            <div class="header">
+
+                <div class="logo">
+                    <img src="https://theme.hstatic.net/1000237375/1000756917/14/logo.png?v=1831" alt=" MINH LONG BOOK" width="250" height="60" />
+                </div>
+
+                <div class="button">
+                    <div class="input tìm kiếm">
+                        <input type="text" placeholder="Tìm kiếm..." width="855" height="35" />
+                    </div>
+                    <div class="">
+                        <button width="100" height="35">Tìm kiếm</button>
+                    </div>
+                </div>
+
+                <div class="hot-line">
+                    <ul class="hot-line">
+                        <li title="Hot line">
+                            <img src="https://theme.hstatic.net/1000237375/1000756917/14/phone.png?v=1831" width="30" height="30" />
+                            <br />
+                            <span>Tra cứu đơn hàng</span>
+                        </li>
+                        <li title="Giỏ hàng">
+                            <a href="@Url.Action("GIOHANG", "Home")">
+                                <i class="fa-solid fa-cart-shopping" width="40" height="40"></i>
+                                <br />
+                                <span>Giỏ hàng</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("DANGNHAP", "Home")">
+                                <i class="fa-regular fa-circle-user" title="Tài khoản"></i>
+                            </a>
+                            <br />
+                            <span>Tài khoản</span>
+
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+
+        <nav>
+            <!--đg dẫn các link các mục trang wed-->
+            <div class="danh-muc">
+                <div>
+                    <button onclick="menu.hidden^=1">☰</button>
+                    <ul id="menu" hidden>
+                        <li><a href="@Url.Action("TRANGCHU","Home")">Trang chủ</a></li>
+                        <li><a href="#">Sách Thiếu Nhi</a></li>
+                        <li><a href="#">Sách Kĩ Năng Sống</a></li>
+                    </ul>
+                </div>
+                <div class="san-pham">
+                    <div>
+                        <img src="https://theme.hstatic.net/1000237375/1000756917/14/item_image_chinhsach_1.png?v=1831" alt="xe" width="24">
+                        <span>Ship COD Trên Toàn Quốc</span>
+                    </div>
+                    <div>
+                        <img src="https://theme.hstatic.net/1000237375/1000756917/14/item_image_chinhsach_2.png?v=1831" alt="free" width="24">
+                        <span>Free Ship Đơn Hàng Trên 300k</span>
+                    </div>
+                    <div>
+                        <img src="https://theme.hstatic.net/1000237375/1000756917/14/item_image_chinhsach_3.png?v=1831" alt="phone" width="24">
+                        <span>0966 160 925 / 0989 849 396</span>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+
+
+
+
+    @RenderBody()
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/DANGNHAP.css")" />
+    <section id="footer_promotion">
+        <div class="container">
+            <div class="col-md-3 col-sm-3 col-xs-6 item_policy">
+                <div class="info_policy clearfix">
+                    <span class="name-icon pull-left fa fa-truck"></span>
+                    <div class="description pull-left">
+                        <h4>MIỄN PHÍ VẬN CHUYỂN</h4>
+                        <p>cho đơn hàng trên 300,000 VNĐ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6 item_policy">
+                <div class="info_policy clearfix">
+                    <span class="name-icon pull-left fa fa-money"></span>
+                    <div class="description pull-left">
+                        <h4>SHIP COD TOÀN QUỐC</h4>
+                        <p>Thanh toán khi nhận sách</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6 item_policy">
+                <div class="info_policy clearfix">
+                    <span class="name-icon pull-left fa fa-smile-o"></span>
+                    <div class="description pull-left">
+                        <h4>MIỄN PHÍ ĐỔI TRẢ HÀNG</h4>
+                        <p> trong vòng 10 ngày</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6 item_policy">
+                <div class="info_policy clearfix">
+                    <span class="name-icon pull-left fa fa-phone"></span>
+                    <div class="description pull-left">
+                        <h4>Hotline:</h4>
+                        <p>0966160925 - 0989849396</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <img class="footer-logo" src="https://theme.hstatic.net/1000237375/1000756917/14/logo_ft.png?v=1831" />
+                <p>CÔNG TY TNHH MỘT THÀNH VIÊN THƯƠNG MẠI VÀ DỊCH VỤ VĂN HÓA MINH LONG</p>
+                <p>Mã Số Thuế: 0102726224</p>
+                <p>Văn phòng: LK 02 - 03, Dãy B, KĐT Green Pearl, 378 Minh Khai, Hai Bà Trưng, Hà Nội.</p>
+                <p>0286 675 1142</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>TIN TỨC</h3>
+                <p>Giới thiệu</p>
+                <p>Sự kiện</p>
+                <p>Thông tin khuyến mãi</p>
+
+            </div>
+
+            <div class="footer-column">
+                <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+                <p>Diều khoản sử dụng</p>
+                <p>Hướng dẫn mua hàng</p>
+                <p>Phương thức thanh toán</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>THÔNG TIN</h3>
+                <p>Đăng nhập</p>
+                <p>Đăng kí</p>
+                <p>Tra cứu đơn hàng</p>
+            </div>
+        </div>
+        <hr />
+        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

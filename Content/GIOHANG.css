@@ -1,0 +1,379 @@
+﻿body {
+    background-color: #f5f5f5;
+}
+
+/* Thiết lập cơ bản */
+.cart-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc; /* Thêm border để dễ hình dung khối lớn */
+    font-family: Arial, sans-serif;
+}
+
+/* Các hàng chung */
+.cart-row {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+}
+
+/* --- Hàng 1: Tiêu đề Giỏ Hàng --- */
+.header-row {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 15px;
+}
+
+    .header-row h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+/* --- Hàng 2 & 3: Tiêu đề cột và Chi tiết sản phẩm (5 khối) --- */
+/* Thiết lập flex cho các cột */
+.column-titles,
+.product-item {
+    display: grid;
+    /* Chia 5 cột với tỉ lệ độ rộng gần giống hình ảnh */
+    grid-template-columns: 3fr 1fr 1fr 1fr 0.5fr;
+    text-align: center;
+}
+
+    /* Căn lề trái cho cột Sản phẩm */
+    .column-titles .product-col,
+    .product-item .product-col {
+        text-align: left;
+    }
+
+/* Cột Tiêu đề */
+.column-titles {
+    font-weight: bold;
+    color: #555;
+    padding-bottom: 5px;
+}
+
+/* Chi tiết sản phẩm */
+.product-item {
+    padding: 15px 0;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: 1px solid #eee;
+}
+
+.quantity-col input[type="number"] {
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* --- Hàng 4: Chú thích và Thanh toán (2 khối) --- */
+.notes-checkout {
+    /* Đặt 2 khối cạnh nhau */
+    display: flex;
+    align-items: flex-start; /* Giữ cho các khối ở phía trên */
+    border-bottom: none;
+    padding-top: 20px;
+}
+
+.notes-block {
+    flex: 2; /* Chiếm 2 phần */
+    padding-right: 20px;
+}
+
+    .notes-block label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .notes-block textarea {
+        width: 100%;
+        height: 80px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        resize: vertical;
+    }
+
+.checkout-block {
+    flex: 1; /* Chiếm 1 phần */
+    text-align: right;
+}
+
+.grand-total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+/*////////////////////////*/
+.checkout-btn {
+    background-color: #4CAF50;
+    color: yellow;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+    .checkout-btn:hover {
+        background-color: #45a049;
+    }
+
+
+
+
+.actions button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.continue-shopping {
+    background-color: transparent;
+    border: 1px solid #4CAF50;
+    color: #4CAF50;
+}
+
+
+
+
+/* --- Hàng 6: Sản phẩm đã xem (1 khối) --- */
+.viewed-products {
+    border-top: 1px solid #ccc;
+    margin-top: 30px;
+    padding-top: 20px;
+    display: block; /* Quay lại block bình thường */
+}
+
+    .viewed-products h2 {
+        font-size: 16px;
+        margin: 0;
+    }
+
+
+
+/* --- Khối Order Form và Order Success --- */
+.order-form-container {
+    max-width: 900px;
+    margin: 30px auto; /* Khoảng cách với khối giỏ hàng */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.form-block, .order-success-block {
+    padding: 20px;
+    /* border: 1px solid #eee; Giữ để dễ hình dung, có thể bỏ */
+    margin-bottom: 20px;
+}
+
+.form-block {
+    border-bottom: 1px solid #eee; /* Đường kẻ phân cách giữa form và success block */
+}
+
+.form-header {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.form-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #555;
+    }
+
+.form-input {
+    width: calc(100% - 22px); /* Trừ padding và border */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.payment-method label {
+    font-weight: normal; /* Labels cho radio button không quá đậm */
+    display: inline-block; /* Để radio và label nằm cùng hàng */
+    margin-right: 15px;
+}
+
+.payment-method div {
+    margin-bottom: 5px;
+}
+
+.checkout-submit-btn {
+    background-color: #28a745; /* Màu xanh lá cây đậm */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    float: right; /* Đặt nút sang phải */
+}
+
+    .checkout-submit-btn:hover {
+        background-color: #218838;
+    }
+
+/* Clearfix cho form-actions để nút float đúng */
+.form-actions::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Order Success Block */
+.order-success-block {
+    text-align: center;
+    color: #333;
+    /* margin-top: 20px; */
+}
+
+.success-icon {
+    margin-bottom: 15px;
+}
+
+.check-mark-icon {
+    width: 80px; /* Kích thước icon dấu tích */
+    height: 80px;
+}
+
+.success-message {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745; /* Màu xanh lá cho thông báo thành công */
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.order-code, .thank-you-message {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+    .order-code span {
+        font-weight: bold;
+        color: #000;
+    }
+
+/* Để ẩn khối thành công ban đầu */
+.hidden {
+    display: none;
+}
+
+/* Thêm vào file GIOHANG.css */
+.error-message {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+    display: block; /* Đảm bảo nó hiển thị trên một dòng mới */
+    /* Mặc định có thể để display: none; trong CSS nếu muốn ẩn hoàn toàn khi không có lỗi */
+}
+.hidden {
+    display: none !important;
+}
+/* --- Khối Order Success Độc Lập --- */
+/* --- Khối Container Chia Đôi (MỚI) --- */
+.checkout-split-container {
+    max-width: 900px;
+    margin: 30px auto;
+    display: flex; /* Kích hoạt Flexbox để đặt 2 khối cạnh nhau */
+    gap: 30px; /* Khoảng cách giữa hai cột */
+    align-items: flex-start; /* Canh hai khối ở vị trí trên cùng */
+}
+
+/* --- Khối Form (Sửa đổi để phù hợp với container mới) --- */
+.form-block {
+    flex: 1; /* Chiếm 50% chiều rộng */
+    padding: 20px;
+    background-color: #fff; /* Màu nền trắng */
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.form-header {
+    /* Đã giữ nguyên */
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+/* --- Khối Order Success (Sửa đổi để nằm ngang và có nền trắng) --- */
+.order-success-block {
+    flex: 1; /* Chiếm 50% chiều rộng */
+    padding: 40px 20px;
+    background-color: #fff; /* Màu nền trắng (theo yêu cầu) */
+    border: 1px solid #ccc; /* Border giống khối form */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-radius: 4px;
+    text-align: center;
+    /* Thiết lập Flex để canh giữa nội dung dọc và ngang */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 450px; /* Chiều cao tối thiểu để khớp với chiều cao của khối form */
+}
+
+.success-icon {
+    margin-bottom: 15px;
+}
+
+.check-mark-icon {
+    width: 60px; /* Kích thước icon dấu tích */
+    height: 60px;
+}
+
+.success-message {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* Lớp ẩn/hiện */
+.hidden {
+    display: none !important;
+}

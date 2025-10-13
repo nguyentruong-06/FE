@@ -1,0 +1,385 @@
+﻿/* Reset mặc định cho toàn bộ trang */
+* {
+    margin: 0; /* bỏ khoảng cách mặc định */
+    padding: 0; /* bỏ padding mặc định */
+    box-sizing: border-box; /* tính cả border, padding vào width/height */
+}
+
+body {
+    font-family: Arial, sans-serif; /* font chữ chung */
+}
+
+/* ----------- HEADER ----------- */
+.header {
+    display: flex; /* xếp các phần tử con ngang hàng */
+    justify-content: space-between; /* logo - tìm kiếm - hotline cách đều nhau */
+    align-items: center; /* căn giữa theo chiều dọc */
+    padding: 10px 40px; /* khoảng cách trong khối header */
+}
+
+/* Logo */
+.logo img {
+    max-height: 60px; /* giới hạn chiều cao logo */
+}
+
+/* Ô tìm kiếm */
+.button {
+    display: flex; /* input + button nằm trên 1 hàng */
+    align-items: center; /* căn giữa theo chiều dọc */
+    flex: 1; /* chiếm không gian còn lại giữa logo và hotline */
+    justify-content: center; /* căn giữa theo chiều ngang */
+}
+
+    .button input {
+        width: 500px; /* chiều rộng ô tìm kiếm */
+        height: 35px; /* chiều cao ô tìm kiếm */
+        padding: 5px 10px; /* khoảng cách chữ bên trong */
+        border: 1px solid #008000; /* viền màu xanh */
+        border-right: none; /* bỏ viền bên phải (nối liền nút tìm kiếm) */
+        border-radius: 4px 0 0 4px; /* bo tròn góc trái */
+    }
+
+    .button button {
+        height: 35px; /* chiều cao nút bằng input */
+        width: 100px; /* chiều rộng nút */
+        border: none; /* bỏ viền */
+        background: #008000; /* nền xanh lá */
+        color: white; /* chữ trắng */
+        border-radius: 0 4px 4px 0; /* bo tròn góc phải */
+        cursor: pointer; /* đổi thành dấu tay khi hover */
+    }
+
+/* Hotline / giỏ hàng / tài khoản */
+.hot-line ul {
+    display: flex; /* các <li> nằm ngang */
+    gap: 30px; /* khoảng cách giữa các mục */
+    list-style: none; /* bỏ chấm đầu dòng */
+    align-items: center; /* căn giữa icon và chữ */
+}
+
+.hot-line li {
+    text-align: center; /* căn chữ giữa dưới icon */
+    font-size: 14px; /* cỡ chữ nhỏ gọn */
+    color: #333; /* màu chữ xám đậm */
+    cursor: pointer; /* khi di chuột vào thành dấu tay */
+}
+
+    .hot-line li i,
+    .hot-line li img {
+        font-size: 25px; /* icon to hơn chữ */
+        margin-bottom: 5px; /* cách chữ 1 khoảng */
+    }
+
+/* ----------- NAV MENU ----------- */
+.danh-muc {
+    display: flex; /* các div con nằm ngang */
+    align-items: center; /* căn giữa theo trục dọc */
+    background: #ddd; /* nền xám nhạt */
+    padding: 10px 40px; /* khoảng cách trong */
+    gap: 40px; /* khoảng cách giữa các nhóm */
+  
+}
+#menu {
+    list-style: none; /* bỏ chấm đầu dòng */
+    padding: 0;/*bỏ khoảng cách mặc định của dấu chấm*/
+}
+
+    /* Nút DANH MỤC SÁCH */
+    .danh-muc button {
+        border: none; /* bỏ viền */
+        background: transparent; /* nền trong suốt */
+        font-size: 16px; /* cỡ chữ */
+        cursor: pointer; /* dấu tay khi hover */
+        list-style: none; /* bỏ chấm đầu dòng */
+    }
+
+/* Các mục sản phẩm / ship */
+.san-pham {
+    display: flex; /* các mục nằm ngang */
+    gap: 40px; /* cách đều nhau 40px */
+    font-size: 14px; /* chữ nhỏ gọn */
+    align-items: center; /* căn giữa icon + text */
+}
+
+    .san-pham div {
+        display: flex; /* icon + text cùng hàng */
+        align-items: center; /* căn giữa dọc */
+        gap: 5px; /* cách icon và chữ 5px */
+        color: #333; /* màu chữ xám */
+    }
+#footer_promotion {
+    background: #fff;
+    padding: 30px 0;
+    border-top: 1px solid #eaeaea;
+}
+
+    #footer_promotion .footer_item {
+        text-align: center;
+        color: #004d26;
+    }
+
+    #footer_promotion img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 8px;
+    }
+
+    #footer_promotion h4 {
+        font-size: 14px;
+        margin: 5px 0;
+        font-weight: bold;
+    }
+
+    #footer_promotion p {
+        font-size: 12px;
+        color: #333;
+    }
+/*------------------conten------------------*/
+/* ===== BANNER SLIDE có sử dụng boostrap trong đó ===== */
+.carousel-item img {
+    height: 450px; /* chỉnh chiều cao banner tại đây */
+    object-fit: cover; /* đảm bảo ảnh không bị méo */
+}
+
+/* chỉnh màu nút điều hướng */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); /* chuyển icon sang màu đen trên nền sáng */
+}
+
+/* chấm tròn chỉ số */
+.carousel-indicators [data-bs-target] {
+    background-color: #4CAF50; /* xanh lá thương hiệu */
+}
+
+
+
+
+/*--------------top bán chạy------------*/
+/* Thiết lập cơ bản */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.product-carousel {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* --- Tiêu đề (TOP SÁCH BÁN CHẠY) --- */
+.carousel-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+/* --- Khối chứa sách và mũi tên --- */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+/* --- Danh sách sản phẩm --- */
+.product-list {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    width: 100%;
+    padding: 0 10px;
+    
+}
+
+/* --- Chi tiết từng sản phẩm --- */
+/* Thiết lập cơ bản */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.product-carousel {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px 0;
+    background-color:#ffffff;
+    
+}
+
+/* --- Tiêu đề (TOP SÁCH BÁN CHẠY) --- */
+.carousel-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #008000;/*màu xanh*/
+    margin-bottom: 20px;
+    padding-left: 10px;
+    
+}
+
+/* --- Khối chứa sách và mũi tên --- */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-color:#ffffff;
+}
+
+/* --- Danh sách sản phẩm --- */
+.product-list {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    width: 100%;
+    padding: 0 10px;
+    
+}
+
+/* --- Chi tiết từng sản phẩm --- */
+.product-item {
+    flex: 0 0 calc(25% - 15px);
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.product-image-box {
+    width: 100%;
+    height: 250px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-name {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+    height: 40px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+/* --- Thông tin giá --- */
+.product-price-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.original-price {
+    font-size: 12px;
+    color: #999;
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+/* CẬP NHẬT MÀU XANH LÁ #008000 */
+.sale-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #008000; /* MÀU XANH LÁ ĐẬM */
+    margin-right: 10px;
+}
+
+/* màu đỏ mã giảm giá */
+.sale-tag {
+    background-color: #c92127;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* --- Mũi tên điều hướng --- */
+.nav-arrow {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    transition: background-color 0.2s;
+    color: #333;
+    font-size: 14px;
+}
+
+    .nav-arrow:hover {
+        background-color: #f5f5f5;
+    }
+
+/* --- Link Xem tất cả --- */
+.view-all-link {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #4a90e2;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+    .view-all-link:hover {
+        text-decoration: underline;
+    }
+.release-badge {
+    position: absolute;
+    top: 0;
+    left: 44px;
+    background-color: #dc3545; /* Màu đỏ */
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-top-left-radius: 0rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 10;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+/*--------------- Footer ----------- */
+.footer-container {
+    width: 100%; /*  luôn full ngang */
+    background-color: #014421;
+    color: white;
+    font-size: 14px;
+    display: grid; /* dùng grid */
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 20px 40px;
+}
+
+.footer-logo {
+    max-width: 200px;
+}
+
+

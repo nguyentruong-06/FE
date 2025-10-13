@@ -1,0 +1,274 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MINH LONG BOOK</title>
+    <link rel="icon" type="image/x-icon" href="https://theme.hstatic.net/1000237375/1000756917/14/logo.png?v=1831" />
+    <script src="https://kit.fontawesome.com/7cfb59eb5f.js" crossorigin="anonymous"></script>
+    
+
+</head>
+<body>
+    <!-- BANNER SLIDE MINH LONG BOOK STYLE -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+
+        <!-- Chấm chỉ báo -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Nội dung slide -->
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="https://theme.hstatic.net/1000237375/1000756917/14/slider_item_1_image.jpg?v=1831" class="d-block w-100" alt="Banner 1">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://theme.hstatic.net/1000237375/1000756917/14/slider_item_2_image.jpg?v=1831" class="d-block w-100" alt="Banner 2">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://theme.hstatic.net/1000237375/1000756917/14/slider_item_3_image.jpg?v=1831" class="d-block w-100" alt="Banner 3">
+            </div>
+
+        </div>
+
+        <!-- Nút điều hướng -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Trước</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Tiếp</span>
+        </button>
+    </div>
+    <!-------------------------------------->
+    <!---chi tiết sản phẩm-->
+
+
+    <div class="product-carousel">
+        
+        <h2 class="carousel-title">TOP SÁCH BÁN CHẠY</h2>
+
+        <div class="carousel-container">
+
+            <button class="nav-arrow nav-arrow-left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="product-list">
+
+                <div class="product-item">
+                    <div class="product-image-box">
+                        <a href="@Url.Action("PRODUCTDETAIL","Home")">
+                            <img src="https://product.hstatic.net/1000237375/product/bia_truoc_1_1b70c7efb1404568b6752bda733bdb3a_large.jpg" alt="Sách: 101 Từ Đầu Tiên Cho Bé - Động Vật" class="product-image">
+
+                        </a>
+                    </div>
+                    <p class="product-name">Sách: 101 Từ Đầu Tiên Cho Bé - Động V...</p>
+                    <div class="product-price-info">
+                        <span class="original-price">60,000đ</span>
+                        <span class="sale-price">48,000đ</span>
+                        <span class="sale-tag">- 20%</span>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-image-box">
+                        <img src="https://product.hstatic.net/1000237375/product/bia_1_409d2c70893a478cac94c2a96f49c057_large.jpg" alt="Sách: Tuyển Tập Truyện Cổ Tích Việt Nam" class="product-image">
+                    </div>
+                    <p class="product-name">Sách: Tuyển Tập Truyện Cổ Tích Việt N...</p>
+                    <div class="product-price-info">
+                        <span class="original-price">125,000đ</span>
+                        <span class="sale-price">100,000đ</span>
+                        <span class="sale-tag">- 20%</span>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-image-box">
+                        <img src="https://product.hstatic.net/1000237375/product/89360019_d9d352cda4be4addb57ecf5d44cb161b_large.jpg" alt="Sách: Combo Tri Thức Cho Một Thai Kì" class="product-image">
+                    </div>
+                    <p class="product-name">Sách: Combo Tri Thức Cho Một Thai Kì ...</p>
+                    <div class="product-price-info">
+                        <span class="original-price">255,000đ</span>
+                        <span class="sale-price">191,250đ</span>
+                        <span class="sale-tag">- 25%</span>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-image-box">
+                        <img src="https://product.hstatic.net/1000237375/product/thiet_ke_chua_co_ten__76__1ea9b3d829174282a69c71a299446a12_large.png" alt="Sách: Combo Rèn Luyện Kỹ Năng Sống" class="product-image">
+                    </div>
+                    <p class="product-name">Sách: Combo Rèn Luyện Kỹ Năng Sống Ch...</p>
+                    <div class="product-price-info">
+                        <span class="original-price">505,000đ</span>
+                        <span class="sale-price">378,750đ</span>
+                        <span class="sale-tag">- 25%</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="nav-arrow nav-arrow-right">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+        </div>
+
+        <a href="#" class="view-all-link">Xem tất cả</a>
+
+    </div>
+
+    <!---------------------------------------------------------------------------------->
+
+    <div class="product-carousel">
+        <h2 class="carousel-title">SÁCH KĨ NĂNG SỐNG</h2>
+
+        <div class="carousel-container">
+
+            <button class="nav-arrow nav-arrow-left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="product-list">
+                <div class="product-item">
+                    <div class="product-image-box">
+                        <span class="release-badge">Sắp Phát Hành</span>                <!--sắp phát hành-->
+                        <img src="https://cdn.hstatic.net/products/1000237375/thi_t_k__ch_a_c__t_n__4__28787fe9e4c64005a65059535c4468e4_large.png" alt="Sách: Combo Rèn Luyện Kỹ Năng Sống" class="product-image">
+                    </div>
+                    <p class="product-name">Sách: Kiến Tạo Dòng Chảy</p>
+                    <div class="product-price-info">
+                        <span class="original-price"></span>
+                        <span class="sale-price" style="text-align:center">72,000</span>
+                        @*<span class="sale-tag"></span>*@
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image-box">
+                        <img src="https://cdn.hstatic.net/products/1000237375/9_fe61ac924c6d4fd0a17fee09c5843b79_large.png" alt="Sách: Combo Rèn Luyện Kỹ Năng Sống" class="product-image">
+                    </div>
+                    <p class="product-name">Sách: Quản Lí Giỏi Phải Biết Trao Quyền </p>
+                    <div class="product-price-info">
+                        <span class="original-price">125,000đ</span>
+                        <span class="sale-price">100,000đ</span>
+                        <span class="sale-tag">- 20%</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image-box">
+                        <img src="https://cdn.hstatic.net/products/1000237375/_nh_web_-_2025-07-29t143412.608_65600139d96244ef94ab6c1e0781763d_large.png" alt="Sách: Combo Rèn Luyện Kỹ Năng Sống" class="product-image">
+                    </div>
+                    <p class="product-name">Sách: Tôi Dạo Này Ra Sao? </p>
+                    <div class="product-price-info">
+                        <span class="original-price">100,000đ</span>
+                        <span class="sale-price">80,000đ</span>
+                        <span class="sale-tag">- 20%</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image-box">
+                        <img src="https://cdn.hstatic.net/products/1000237375/_nh_web_-_2025-07-01t191713.730_ff5f73b5ccdb41e886d4b24326ffb921_large.png" alt="Sách: Combo Rèn Luyện Kỹ Năng Sống" class="product-image">
+                    </div>
+                    <p class="product-name">Sách: Sức Mạnh Cảm Xúc Trong Công Việc </p>
+                    <div class="product-price-info">
+                        <span class="original-price">130,000đ</span>
+                        <span class="sale-price">104,000đ</span>
+                        <span class="sale-tag">- 20%</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="nav-arrow nav-arrow-right">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+        </div>
+
+        <a href="#" class="view-all-link">Xem tất cả</a>
+
+    </div>
+
+    <!---------------------3--------------------------->
+
+    <div class="product-carousel">
+        <h2 class="carousel-title">SÁCH THIẾU NHI</h2>
+
+        <div class="carousel-container">
+
+            <button class="nav-arrow nav-arrow-left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="product-list">
+                <div class="product-item">
+                    <div class="product-image-box">
+                        <img src="https://product.hstatic.net/1000237375/product/thiet_ke_chua_co_ten__76__1ea9b3d829174282a69c71a299446a12_large.png" alt="Sách: Combo Rèn Luyện Kỹ Năng Sống" class="product-image">
+                    </div>
+                    <p class="product-name">Sách: Combo Rèn Luyện Kỹ Năng Sống Cho Học Sinh - Tái Bản (5 Cuốn)</p>
+                    <div class="product-price-info">
+                        <span class="original-price">505,000</span>
+                        <span class="sale-price">378,750</span>
+                        <span class="sale-tag">- 25%</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image-box">
+                        <img src="https://product.hstatic.net/1000237375/product/thi_t_k__ch_a_c__t_n_ef554182dc0a4040b417c56e0d953a5e_large.png" alt="Sách: Combo Rèn Luyện Kỹ Năng Sống" class="product-image">
+                    </div>
+                    <p class="product-name">Sách: 100 Truyện Ngụ Ngôn Song Ngữ Anh - Việt Hay Nhất </p>
+                    <div class="product-price-info">
+                        <span class="original-price">125,000đ</span>
+                        <span class="sale-price">100,000đ</span>
+                        <span class="sale-tag">- 20%</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image-box">
+                        <img src="https://product.hstatic.net/1000237375/product/1080x1080_771aaa501d134400b6b517e1b825c4a5_large.png" alt="Sách: Combo Rèn Luyện Kỹ Năng Sống" class="product-image">
+                    </div>
+                    <p class="product-name">Sách: Truyện Cổ Tích Thế Giới Song Ngữ Hay Nhất </p>
+                    <div class="product-price-info">
+                        <span class="original-price">90,000đ</span>
+                        <span class="sale-price">72,000đ</span>
+                        <span class="sale-tag">- 20%</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image-box">
+                        <img src="https://product.hstatic.net/1000237375/product/untitled-1_3b7bbeae65f54d71a7d7e09655e9fc01_large.jpg" alt="Sách: Combo Rèn Luyện Kỹ Năng Sống" class="product-image">
+                    </div>
+                    <p class="product-name">Sách: Combo 8 Cuốn Hỏi Nhỏ Biết To </p>
+                    <div class="product-price-info">
+                        <span class="original-price">320,000đ</span>
+                        <span class="sale-price">240,000đ</span>
+                        <span class="sale-tag">- 25%</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="nav-arrow nav-arrow-right">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+        </div>
+
+        <a href="#" class="view-all-link">Xem tất cả</a>
+
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+/* ------------------- PHẦN CHÍNH ------------------- */
+.main {
+    max-width: auto;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------- NÚT FACEBOOK / GOOGLE ------------------- */
+.all-face-google {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.div-face, .div-google {
+    margin: 10px 0;
+}
+
+.but-face, .but-google {
+    width: 220px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.but-face {
+    background-color: #3b5998; /* Facebook xanh */
+}
+
+    .but-face:hover {
+        background-color: #324b81;
+    }
+
+.but-google {
+    background-color: #db4437; /* Google đỏ */
+}
+
+    .but-google:hover {
+        background-color: #c1351d;
+    }
+
+/* ------------------- KHUNG LOGIN / SIGNUP ------------------- */
+.container-login {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+    /* Cột bên trái - Đăng nhập */
+    .container-login > div:first-child {
+        flex: 1;
+        background-color: #fafafa;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+/* Cột bên phải - Đăng ký */
+.item-signup {
+    flex: 1;
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Tiêu đề của mỗi khối */
+.container-login h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* ------------------- INPUT & BUTTON ------------------- */
+/* Căn giữa tổng thể */
+/* Căn giữa tổng thể */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* khoảng cách giữa 2 khối đăng nhập & đăng ký */
+    margin-top: 30px;
+}
+
+/* Khối đăng nhập & đăng ký */
+.form-box {
+    background: #f9f9f9;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 360px; /* độ rộng đều nhau */
+}
+
+    /* Tiêu đề */
+    .form-box h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Input */
+    .form-box input[type="text"],
+    .form-box input[type="password"],
+    .form-box input[type="email"] {
+        width: 100%;
+        padding: 10px 12px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    /* Nút bấm */
+    .form-box button {
+        width: 100%;
+        background-color: white;
+        color: #ccc;  
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+        .form-box button:hover {
+            background-color: #008000; /* xanh lá */
+            color: white;
+        }
+
+
+
+/* ------------------- ĐƯỜNG KẺ PHÂN CÁCH ------------------- */
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
+}
+
+/* ------------------- CHỮ HOẶC ------------------- */
+.main h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
