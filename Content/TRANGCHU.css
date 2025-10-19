@@ -71,6 +71,53 @@ body {
     }
 
 /* ----------- NAV MENU ----------- */
+/* Thiết lập vị trí cho menu con */
+.danh-muc-toggle {
+    position: relative; /* Rất quan trọng: làm gốc cho menu con */
+}
+
+/* Kiểu dáng và vị trí của menu con */
+#menu-con {
+    display: none; /* Mặc định ẨN menu đi */
+    position: absolute; /* Cho phép menu con "nổi" lên trên các nội dung khác */
+    top: 100%; /* Đặt menu con ngay dưới nút kích hoạt */
+    left: 0;
+    z-index: 1000; /* Đảm bảo menu con nằm trên cùng */
+    width: 250px; /* Chiều rộng của bảng menu */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+}
+
+    #menu-con li a {
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #333;
+        border: 1px solid #ddd;
+    }
+
+        #menu-con li a:hover {
+            background-color: #f0f0f0;
+            color: #008000; /* Màu xanh lá cây thương hiệu khi di chuột qua */
+        }
+
+    #menu-con.active {
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+
 .danh-muc {
     display: flex; /* các div con nằm ngang */
     align-items: center; /* căn giữa theo trục dọc */
